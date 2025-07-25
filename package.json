@@ -1,0 +1,15 @@
+{
+  "name": "vk-add-link-parameter",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "@wordpress/env": "^10.27.0",
+    "gulp": "^5.0.1",
+    "gulp-terser": "^2.1.0"
+  },
+  "scripts": {
+    "build": "gulp minify-js",
+    "dist": "gulp dist",
+    "wp-env": "wp-env"
+  }
+}
