@@ -1,17 +1,23 @@
 {
-  "name": "",
-  "version": "1.0.0",
-  "description": "",
-  "devDependencies": {
-    "@wordpress/env": "^10.27.0",
-    "gulp": "^5.0.1",
-    "gulp-terser": "^2.1.0"
-  },
-  "scripts": {
-    "build": "gulp minify-js",
-    "lint": "composer format && composer lint",
-    "dist": "gulp dist",
-    "phpunit": "composer install && wp-env run tests-cli --env-cwd='wp-content/plugins/vk-add-link-parameter' vendor/bin/phpunit -c .phpunit.xml --testsuite default",
-    "wp-env": "wp-env"
-  }
+	"name": "",
+	"version": "1.0.0",
+	"description": "",
+	"devDependencies": {
+		"@wordpress/env": "^10.27.0",
+		"@wordpress/scripts": "^30.20.0",
+		"gulp": "^5.0.1",
+		"gulp-terser": "^2.1.0"
+	},
+	"scripts": {
+		"build": "gulp minify-js",
+		"lint": "npm run format:php && npm run lint:php && npm run lint:js",
+		"lint:js": "wp-scripts format . && wp-scripts lint-js . --fix",
+		"lint:php": "composer lint",
+		"format:php": "composer format",
+		"dist": "composer install --no-dev && rm -rf dist && gulp dist && composer install",
+		"zip": "cd dist && zip -r vk-add-link-parameter.zip vk-add-link-parameter",
+		"make:zip": "npm run dist && npm run zip",
+		"phpunit": "composer install && wp-env run tests-cli --env-cwd='wp-content/plugins/vk-add-link-parameter' vendor/bin/phpunit -c .phpunit.xml --testsuite default",
+		"wp-env": "wp-env"
+	}
 }

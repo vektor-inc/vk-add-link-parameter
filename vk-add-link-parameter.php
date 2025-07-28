@@ -13,6 +13,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$valp_update_checker = PucFactory::buildUpdateChecker(
+	'https://license.vektor-inc.co.jp/check/?action=get_metadata&slug=vk-add-link-parameter',
+	__FILE__,
+	'vk-add-link-parameter'
+);
+
+
 /**
  * Add Link Script
  */

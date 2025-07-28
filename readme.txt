@@ -17,7 +17,7 @@ VK Add Link Parameter is a lightweight WordPress plugin that automatically adds 
 
 == Installation ==
 
-1. Upload the `vk-add-link-parameter.php` and `vk-add-link-parameter.js` files to your `/wp-content/plugins/vk-add-link-parameter/` directory.
+1. Upload and extruct the `vk-add-link-parameter.zip` to your WordPress plugin directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. The plugin will automatically work on all public-facing pages.
 

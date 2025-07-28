@@ -1,13 +1,13 @@
 import gulp from 'gulp';
-import terser  from 'gulp-terser';
+import terser from 'gulp-terser';
 
 // エラーでも監視を続行させる
-gulp.task('minify-js', function () {
-  return gulp.src('src/*.js')   // 圧縮元
-    .pipe(terser())
-    .pipe(gulp.dest('build/'));      // 出力先
-});
-
+gulp.task( 'minify-js', function () {
+	return gulp
+		.src( 'src/*.js' ) // 圧縮元
+		.pipe( terser() )
+		.pipe( gulp.dest( 'build/' ) ); // 出力先
+} );
 
 // dist ////////////////////////////////////////////////
 
@@ -16,7 +16,7 @@ gulp.task( 'dist', function () {
 		.src(
 			[
 				'./build/**',
-		'./**/*.php',
+				'./**/*.php',
 				'./**/*.txt',
 				'!./tests/**',
 				'!./dist/**',
@@ -27,5 +27,5 @@ gulp.task( 'dist', function () {
 				base: './',
 			}
 		)
-		.pipe( gulp.dest( 'dist/vk-ai-editmate' ) );
+		.pipe( gulp.dest( 'dist/vk-add-link-parameter' ) );
 } );
