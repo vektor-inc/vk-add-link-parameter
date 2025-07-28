@@ -1,5 +1,5 @@
-import gulp from 'gulp';
-import terser from 'gulp-terser';
+const gulp = require('gulp');
+const terser = require('gulp-terser');
 
 // エラーでも監視を続行させる
 gulp.task( 'minify-js', function () {
