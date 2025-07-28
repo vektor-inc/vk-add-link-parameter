@@ -2,7 +2,7 @@
 /**
  * Plugin Name: VK Add Link Parameter
  * Description: Adds a custom parameter to the VK share link.
- * Version: 1.0
+ * Version: 0.1.0
  * Author: Vektor, Inc.
  * Author URI: https://www.vektor-inc.co.jp
  * License: GPL-2.0-or-later
