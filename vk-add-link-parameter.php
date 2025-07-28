@@ -5,6 +5,9 @@
  * Version: 1.0
  * Author: Vektor, Inc.
  * Author URI: https://www.vektor-inc.co.jp
+ * License: GPL-2.0-or-later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: vk-add-link-parameter
  *
  * @package VK Add Link Parameter
  */
