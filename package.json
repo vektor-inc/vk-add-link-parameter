@@ -2,6 +2,9 @@
 	"name": "vk-add-link-parameter",
 	"version": "1.0.0",
 	"description": "",
+	"volta": {
+		"node": "24.22.1"
+	},
 	"devDependencies": {
 		"@wordpress/env": "^10.27.0",
 		"@wordpress/scripts": "^30.20.0",
